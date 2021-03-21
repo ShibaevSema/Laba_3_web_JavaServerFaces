@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+    <title>laba 3 web</title>
+</h:head>
+
+<h:body>
+    <div>
+        <div class="header">
+            <h2 align="center">Шибаев Семён Сергеевич<br/>
+                P3210<br/>
+                Вариант 10776</h2>
+        </div>
+        <div class="badComedian">
+            <img src="#{resource['image/badC.jpg']}" alt="" />
+        </div>
+        <div class = "clock">
+        <p>Time:<span id="time_span"/></p>
+        <script type="text/javascript">
+            function updateTime() {
+                var currentTime = new Date();
+                document.getElementById('time_span').innerHTML = currentTime.toLocaleTimeString();
+            }
+            updateTime();
+            setInterval(updateTime, 13000);
+        </script>
+        <h:form>
+            <h:button style="font-size: x-large" value="Start" outcome="secondPage"/>
+        </h:form>
+    </div>
+        <h:outputStylesheet library="css" name="start.css"/>
+    </div>
+</h:body>
+
+</html>

@@ -1,0 +1,14 @@
+.card-body {
+    position: relative;
+    float: right;
+}
+
+table {
+    border: 1px solid #428d18;
+    border-collapse: separate;
+    empty-cells: hide;
+}
+
+th, td {
+    border: 2px solid #428d18;
+}
